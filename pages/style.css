@@ -172,21 +172,40 @@ section {
     border-radius: 2px;
 }
 
-
+/* About Section */
 #about {
     background: white;
 }
 
 .about-content {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
+}
+
+.about-photo {
+    flex: 0 0 300px;
+}
+
+.about-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(5, 150, 105, 0.2);
+    border: 4px solid var(--accent);
+}
+
+.about-text {
+    flex: 1;
     font-size: 1.1rem;
     line-height: 1.8;
     color: var(--text-light);
 }
 
-
+/* Skills Section */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -230,7 +249,7 @@ section {
     font-weight: 500;
 }
 
-
+/* Projects Section */
 #projects {
     background: white;
 }
@@ -255,7 +274,6 @@ section {
     box-shadow: 0 15px 40px rgba(5, 150, 105, 0.15);
     border-color: var(--accent);
 }
-
 
 .project-content {
     padding: 1.5rem;
@@ -304,7 +322,7 @@ section {
     color: var(--secondary);
 }
 
-
+/* Contact Section */
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
@@ -368,7 +386,7 @@ section {
     box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
 }
 
-
+/* Footer */
 footer {
     background: var(--dark);
     color: white;
@@ -376,7 +394,7 @@ footer {
     padding: 2rem;
 }
 
-
+/* Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -388,7 +406,7 @@ footer {
     }
 }
 
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         gap: 1rem;
@@ -409,5 +427,20 @@ footer {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    /* About Section Mobile */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        flex: 0 0 auto;
+    }
+
+    .about-pic {
+        width: 250px;
+        height: 250px;
     }
 }
