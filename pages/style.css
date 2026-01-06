@@ -122,8 +122,8 @@ nav {
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     border: 6px solid var(--accent);
     object-fit: cover;
@@ -190,8 +190,8 @@ section {
 }
 
 .about-pic {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 425px;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 10px 30px rgba(5, 150, 105, 0.2);
@@ -421,8 +421,8 @@ footer {
     }
 
     .profile-pic {
-        width: 250px;
-        height: 250px;
+        width: 380px;
+        height: 380px;
     }
 
     .section-title {
